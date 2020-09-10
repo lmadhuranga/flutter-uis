@@ -81,10 +81,10 @@ class _HealthyFoodState extends State<HealthyFood> {
                   height: dHeight - 300.0,
                   child: ListView(
                     children: [
-                      _buildFoodItem('assets/plate1.png', 'Salmon bowl', '\$24.00'),
-                      _buildFoodItem('assets/plate2.png', 'Spring bowl', '\$24.00'), 
-                      _buildFoodItem('assets/plate6.png', 'Avocado bowl', '\$24.00'), 
-                      _buildFoodItem('assets/plate5.png', 'Berry bowl', '\$24.00'), 
+                      _buildFoodItem('assets/curveddesigns/plate1.png', 'Salmon bowl', '\$24.00'),
+                      _buildFoodItem('assets/curveddesigns/plate2.png', 'Spring bowl', '\$24.00'), 
+                      _buildFoodItem('assets/curveddesigns/plate6.png', 'Avocado bowl', '\$24.00'), 
+                      _buildFoodItem('assets/curveddesigns/plate5.png', 'Berry bowl', '\$24.00'), 
                     ],
                   ),
                 ),),
