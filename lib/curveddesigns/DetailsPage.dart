@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class DetailsPage extends StatefulWidget {
   final heroTag;
   final foodName;
@@ -14,17 +15,18 @@ class _DetailsPageState extends State<DetailsPage> {
   var selectedCard = 'WEIGHT';
   final fontName  = 'Montserrat';
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     double dHeight = MediaQuery.of(context).size.height;
     double dWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Color(0xFF7A9BEE),
       appBar: AppBar(
-        leading: IconButton(onPressed: () {
-          Navigator.of(context).pop();
-        },
-        icon: Icon(Icons.arrow_back_ios),
-        color: Colors.white,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.white,
         ),
         backgroundColor: Colors.transparent,
         elevation: 0.0, 
@@ -33,7 +35,7 @@ class _DetailsPageState extends State<DetailsPage> {
         children: [
           Stack(
             children: [
-              Container(
+            Container(
                 height: dHeight - 82.0,
                 width: dWidth,
                 color: Colors.transparent,
@@ -41,15 +43,15 @@ class _DetailsPageState extends State<DetailsPage> {
               Positioned(
                 top:75.0,
                 child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(45.0),
-                      topRight: Radius.circular(45.0),
-                    ),
-                    color: Colors.white,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(45.0),
+                          topRight: Radius.circular(45.0),
+                        ),
+                      color: Colors.white,
 
                   ),
-                  height: dHeight - 100.0,
+                    height: dHeight - 100.0,
                   width: dWidth,
                 ),
               ),
@@ -119,8 +121,8 @@ class _DetailsPageState extends State<DetailsPage> {
                                   height: 25.0,
                                   width: 25.0,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(7.0),
-                                    color: Color(0xFF7A9BEE)
+                                      borderRadius: BorderRadius.circular(7.0),
+                                      color: Color(0xFF7A9BEE)
                                   ),
                                   child: Center(
                                     child: Icon(
@@ -131,7 +133,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                   ),
                                 ),
                               ),
-                              Text(
+                            Text(
                                 '2',
                                 style: TextStyle(
                                   color: Colors.white,
@@ -145,12 +147,12 @@ class _DetailsPageState extends State<DetailsPage> {
                                   height: 25.0,
                                   width: 25.0,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(7.0),
-                                    color: Colors.white,
+                                      borderRadius: BorderRadius.circular(7.0),
+                                      color: Colors.white,
                                   ),
                                   child: Center(
                                     child: Icon(
-                                      Icons.add, 
+                                      Icons.add,
                                       color: Color(0xFF7A9BEE),
                                       size: 20.0,
                                     ),
@@ -162,73 +164,52 @@ class _DetailsPageState extends State<DetailsPage> {
                         )
                       ],
                     ),
-                    Text(
-                      '2',
-                      style: TextStyle(
-                        color:Colors.white,
-                        fontFamily: fontName,
-                        fontSize: 15.0
+                    SizedBox(height: 20.0),
+                    Container(
+                      height: 150.0,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          _buildInfoCard('WEIGHT', '300', 'G'),
+                          SizedBox(width: 10.0),
+                          _buildInfoCard('CALORIES', '267', 'CAL'),
+                          SizedBox(width: 10.0),
+                          _buildInfoCard('VITAMINS', 'A, B6', 'VIT'),
+                          SizedBox(width: 10.0),
+                          _buildInfoCard('AVAIL', 'NO', 'AV')
+                        ],
                       ),
                     ),
-                    InkWell(
-                      onTap: (){},
+                    SizedBox(height: 20.0),
+                    Padding(
+                      padding: EdgeInsets.only(bottom:5.0),
                       child: Container(
-                        height: 25.0,
-                        width: 25.0,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(7.0),
-                          color: Colors.white
+                          borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0), bottomLeft: Radius.circular(25.0), bottomRight: Radius.circular(25.0)),
+                          color: Colors.black
                         ),
+                        height: 50.0,
                         child: Center(
-                          child: Icon(
-                            Icons.add,
-                            color: Color(0xFF7A9BEE),
-                            size: 20.0,
+                          child: Text(
+                            '\$52.00',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Montserrat'
+                            )
                           ),
                         ),
                       ),
                     )
                   ],
-                ),
+                )
               )
-            ],
-          ),
-          SizedBox(height: 20.0),
-          Container(
-            height: 150.0,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                _buildInfoCard('WEIGHT', '300', 'G'),
-                SizedBox(width: 10.0),
-              ],
-            ),
-          ),
-          SizedBox(height: 20.0),
-                      Padding(
-                        padding: EdgeInsets.only(bottom:5.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0), bottomLeft: Radius.circular(25.0), bottomRight: Radius.circular(25.0)),
-                            color: Colors.black
-                          ),
-                          height: 50.0,
-                          child: Center(
-                            child: Text(
-                              '\$52.00',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'Montserrat'
-                              )
-                            ),
-                          ),
-                        ),
-                      )
-        ],
-        
-      ),
+            ]
+          )
+        ]
+      )
     );
   }
+
   Widget _buildInfoCard(String cardTitle, String info, String unit) {
     return InkWell(
       onTap: () {
@@ -241,9 +222,9 @@ class _DetailsPageState extends State<DetailsPage> {
           borderRadius: BorderRadius.circular(10.0),
           color: cardTitle == selectedCard ? Color(0xFF7A9BEE) : Colors.white,
           border: Border.all(
-            color: cardTitle  == selectedCard ? Colors.transparent: Colors.grey.withOpacity(0.3),
+           color: cardTitle  == selectedCard ? Colors.transparent: Colors.grey.withOpacity(0.3),
             style: BorderStyle.solid,
-            width: 0.75
+          width: 0.75
           ),
         ),
         height: 100.0,
@@ -271,7 +252,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     info,
                     style: TextStyle(
                       fontFamily: fontName,
-                      fontSize: 14.0,
+                          fontSize: 14.0,
                       color: cardTitle == selectedCard ? Colors.white:Colors.black,
                       fontWeight: FontWeight.bold
                     ),
