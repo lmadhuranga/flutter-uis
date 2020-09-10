@@ -1,3 +1,4 @@
+import 'package:curved_designs/Emojis/DashboardPage.dart';
 import 'package:curved_designs/curveddesigns/HealthyFood.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: HealthyFood(title: 'Flutter Demo Home Page'),
-      home: HealthyFood(title: 'Flutter Demo Home Page'),
+      // home: HealthyFood(title: 'Flutter Demo Home Page'),
+      home: DashboardPage(),
     );
   }
 }
