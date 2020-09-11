@@ -1,3 +1,4 @@
+import 'package:curved_designs/Emojis/DetailsPage.dart';
 import 'package:curved_designs/Emojis/FoodTabs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -167,7 +168,13 @@ class _DashboardPageState extends State<DashboardPage>
     return Padding(
       padding: EdgeInsets.only(left: 15.0),
       child: InkWell(
-        onTap: (){},
+        onTap: (){
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => EmojisDetailsPage(heroTag: foodName, foodName: foodName, pricePerItem:price, imgPath: imgPath)
+            )
+          );
+        },
         child: Container(
           height: 175.0,
           width: 150.0,
