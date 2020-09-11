@@ -15,6 +15,9 @@ class HomePage extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Ui List Page'),
+        ),
         body: SingleChildScrollView(
           child: Column(
             children: [
