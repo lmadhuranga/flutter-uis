@@ -293,7 +293,7 @@ class _EmojisDetailsPageState extends State<EmojisDetailsPage> {
     return Padding(
       padding: EdgeInsets.all(15.0),
       child: Column(
-       children: <Widget>[
+        children: <Widget>[
           //Don't do this in a real app. 
           if(columnNumber == '1')
           _builColumnItem('assets/emojis/cheese.png', 'Sweet cheese', '11', Color(0xFFFBD6F5)),
@@ -302,11 +302,11 @@ class _EmojisDetailsPageState extends State<EmojisDetailsPage> {
           if(columnNumber == '1')
           _builColumnItem('assets/emojis/popcorn.png', 'Sweet popcorn', '11', Color(0xFFFBD6F5)),
           if(columnNumber == '2')
-          _builColumnItem('assets/emojis/taco.png', 'Tacos', '6', Color(0xFFC2E3FE)),
-        if(columnNumber == '2')
-          SizedBox(height: 15.0),
-        if(columnNumber == '2')
-        _builColumnItem('assets/emojis/sandwich.png', 'Sandwich', '6', Color(0xFFD7FADA)),
+          _builColumnItem('assets/emojis/taco.png', 'Tacos sdfsdf', '6', Color(0xFFC2E3FE)),
+          if(columnNumber == '2')
+            SizedBox(height: 15.0),
+          if(columnNumber == '2')
+          _builColumnItem('assets/emojis/sandwich.png', 'Sandwich', '6', Color(0xFFD7FADA)),
         ],
       ),
     );
