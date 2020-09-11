@@ -1,4 +1,5 @@
 import 'package:curved_designs/Emojis/DashboardPage.dart';
+import 'package:curved_designs/HomePage.dart';
 import 'package:curved_designs/curveddesigns/HealthyFood.dart';
 import 'package:flutter/material.dart';
 
@@ -16,10 +17,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData( 
         primarySwatch: Colors.blue, 
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        // brightness: Brightness.dark,
       ),
       // home: HealthyFood(title: 'Flutter Demo Home Page'),
       // home: HealthyFood(title: 'Flutter Demo Home Page'),
-      home: DashboardPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/healthFood': (context) => HealthyFood(),
+        '/food': (context) => DashboardPage(),
+      },
     );
   }
 }

@@ -2,10 +2,6 @@ import 'package:curved_designs/curveddesigns/DetailsPage.dart';
 import 'package:flutter/material.dart';
 
 class HealthyFood extends StatefulWidget {
-  HealthyFood({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _HealthyFoodState createState() => _HealthyFoodState();
 } 
