@@ -1,4 +1,5 @@
 import 'package:curved_designs/cookies/bottom_nav_bar.dart';
+import 'package:curved_designs/cookies/_cookie_page.dart';
 import 'package:flutter/material.dart';
 
 class CookiesHomePage extends StatefulWidget {
@@ -18,6 +19,8 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
   @override
   Widget build(BuildContext context) {
     var dFont = 'Varela';
+    var sWidth  = MediaQuery.of(context).size.width;
+    var sHeight  = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -77,7 +80,7 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
                 child: Text(
                   'Cookies',
                   style: TextStyle(
-                    fontFamily: 'Varela',
+                    fontFamily: dFont,
                     fontSize: 21.0,
                   )
                 ),
@@ -86,7 +89,7 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
                 child: Text(
                   'Cookie cake',
                   style: TextStyle(
-                    fontFamily: 'Varela',
+                    fontFamily: dFont,
                     fontSize: 21.0,
                   )
                 ),
@@ -95,13 +98,25 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
                 child: Text(
                   'Ice cream',
                   style: TextStyle(
-                    fontFamily: 'Varela',
+                    fontFamily: dFont,
                     fontSize: 21.0,
                   )
                 ),
               )
             ],
           ),
+          Container(
+            height: sHeight - 50.0,
+            width: double.infinity,
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+                CookiePage(),
+                CookiePage(),
+                CookiePage(),
+              ],
+            ),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -115,4 +130,5 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
       bottomNavigationBar: BottomBar(),
     );
   }
+
 }
