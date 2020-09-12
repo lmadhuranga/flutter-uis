@@ -39,6 +39,15 @@ class HomePage extends StatelessWidget {
                   },
                 ),
               ),
+              ButtonTheme(
+                minWidth: minwidth,
+                child: RaisedButton(
+                  child: Text('Surfin'),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/surfin');
+                  },
+                ),
+              ),
             ]
           ),
         ),

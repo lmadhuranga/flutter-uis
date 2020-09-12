@@ -1,5 +1,6 @@
 import 'package:curved_designs/Emojis/DashboardPage.dart';
 import 'package:curved_designs/HomePage.dart';
+import 'package:curved_designs/Surfin/ListInstroctors.dart';
 import 'package:curved_designs/curveddesigns/HealthyFood.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomePage(),
         '/healthFood': (context) => HealthyFood(),
         '/food': (context) => DashboardPage(),
+        '/surfin': (context) => ListInstructors(),
       },
     );
   }
