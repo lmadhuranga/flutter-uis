@@ -1,4 +1,5 @@
 import 'package:curved_designs/Surfin/Models/Instructor.dart';
+import 'package:curved_designs/Surfin/instructor_details.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -115,7 +116,11 @@ class _ListInstructorsState extends State<ListInstructors> {
   buildInstructorGrid(Instructor instructor) {
     return GestureDetector(
       onTap: () {
-        // Todo:: 
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => InstructorDetails(selectedInstructor: instructor),
+          )
+        );
       },
       child: Padding(
         padding: EdgeInsets.all(5.0),
