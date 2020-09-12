@@ -1,3 +1,4 @@
+import 'package:curved_designs/cookies/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class CookiesHomePage extends StatefulWidget {
@@ -7,6 +8,12 @@ class CookiesHomePage extends StatefulWidget {
 
 class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProviderStateMixin {
   TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,6 +104,15 @@ class _CookiesHomePageState extends State<CookiesHomePage> with SingleTickerProv
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          
+        },
+        backgroundColor: Color(0xFFF17532),
+        child: Icon(Icons.fastfood),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomBar(),
     );
   }
 }
