@@ -68,6 +68,7 @@ flutter:
     - family: Montserrat
       fonts:
         - asset: assets/curveddesigns/Montserrat-Regular.ttf
+        - asset: assets/cookies/VarelaRound-Regular.ttf
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

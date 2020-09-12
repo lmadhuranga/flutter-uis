@@ -48,6 +48,15 @@ class HomePage extends StatelessWidget {
                   },
                 ),
               ),
+              ButtonTheme(
+                minWidth: minwidth,
+                child: RaisedButton(
+                  child: Text('Cookies'),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/cookies');
+                  },
+                ),
+              ),
             ]
           ),
         ),
