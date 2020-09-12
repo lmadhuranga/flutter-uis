@@ -213,13 +213,16 @@ class _InstructorDetailsState extends State<InstructorDetails> {
                   shape: BoxShape.circle,
                   color: Color(0xFFA4B2AE),
                 ),
-                child: Center(
-                  child: Icon(
+                child: IconButton(
+                  icon: Icon(
                     Icons.arrow_back,
                     size: 20.0,
                     color: Colors.white,
                   ),
-                ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                )
               )
             ),
           ),
