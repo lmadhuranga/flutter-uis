@@ -20,9 +20,12 @@ class _HealthyFoodState extends State<HealthyFood> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(icon: Icon(Icons.arrow_back_ios),
-                color: Colors.white,
-                onPressed: (){},
+                IconButton(
+                  icon: Icon(Icons.arrow_back_ios),
+                  color: Colors.white,
+                  onPressed: (){
+                    Navigator.of(context).pop();
+                  },
                 ),
                 Container(
                   width: 125.0,
