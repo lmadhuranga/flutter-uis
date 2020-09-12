@@ -142,6 +142,32 @@ class _ListInstructorsState extends State<ListInstructors> {
                   ),
                 ),
               ),
+            ),
+            Positioned(
+              left: 22.0,
+              top: 138.0,
+              child: Column(
+                children: [
+                  Text(
+                    instructor.instructorName,
+                    style: GoogleFonts.sourceSansPro( fontSize: 12.0 ),
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.star,
+                        color: Colors.grey.withOpacity(0.5),
+                        size: 15.0,
+                      ),
+                      SizedBox(width: 3.0,),
+                      Text(
+                        instructor.rating,
+                        style: GoogleFonts.sourceSansPro(fontSize: 11.0),
+                      )
+                    ],
+                  )
+                ],
+              )
             )
           ],
         ),
