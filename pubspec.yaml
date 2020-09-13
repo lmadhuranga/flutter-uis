@@ -54,6 +54,7 @@ flutter:
    - assets/surfin/
    - assets/cookies/
    - assets/dumplings/
+   - assets/fruit-cookbook/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

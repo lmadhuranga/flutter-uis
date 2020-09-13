@@ -66,6 +66,15 @@ class HomePage extends StatelessWidget {
                   },
                 ),
               ),
+              ButtonTheme(
+                minWidth: minwidth,
+                child: RaisedButton(
+                  child: Text('Fruit Cook Book'),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/fruitcookbook');
+                  },
+                ),
+              ),
             ]
           ),
         ),

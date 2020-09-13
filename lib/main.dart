@@ -4,6 +4,7 @@ import 'package:Flutter_UI/Surfin/ListInstroctors.dart';
 import 'package:Flutter_UI/cookies/cookies_home.dart';
 import 'package:Flutter_UI/curveddesigns/HealthyFood.dart';
 import 'package:Flutter_UI/dumplings/dumplings_home.dart';
+import 'package:Flutter_UI/fruitcookbook/fruit_cook_book_home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,8 +23,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         // brightness: Brightness.dark,
       ),
-      // home: HealthyFood(title: 'Flutter Demo Home Page'),
-      // home: HealthyFood(title: 'Flutter Demo Home Page'),
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
@@ -32,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/surfin': (context) => ListInstructors(),
         '/cookies': (context) => CookiesHomePage(),
         '/dumplings': (context) => DumplingsPage(),
+        '/fruitcookbook': (context) => FruitCookBook(),
       },
     );
   }
