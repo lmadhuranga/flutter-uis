@@ -1,4 +1,4 @@
-import 'package:curved_designs/Surfin/Models/Instructor.dart';
+import 'package:Flutter_UI/Surfin/Models/Instructor.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';

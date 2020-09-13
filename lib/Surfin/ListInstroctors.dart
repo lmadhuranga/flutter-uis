@@ -1,5 +1,5 @@
-import 'package:curved_designs/Surfin/Models/Instructor.dart';
-import 'package:curved_designs/Surfin/instructor_details.dart';
+import 'package:Flutter_UI/Surfin/Models/Instructor.dart';
+import 'package:Flutter_UI/Surfin/instructor_details.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

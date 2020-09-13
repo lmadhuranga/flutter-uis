@@ -1,5 +1,5 @@
-import 'package:curved_designs/Emojis/DetailsPage.dart';
-import 'package:curved_designs/Emojis/FoodTabs.dart';
+import 'package:Flutter_UI/Emojis/DetailsPage.dart';
+import 'package:Flutter_UI/Emojis/FoodTabs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

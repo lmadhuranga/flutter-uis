@@ -1,12 +1,13 @@
-import 'package:curved_designs/cookies/cookie_detilals.dart';
+import 'package:Flutter_UI/cookies/cookie_detilals.dart';
 import 'package:flutter/material.dart';
 
 class CookiePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
     var sWidth  = MediaQuery.of(context).size.width;
     var sHeight  = MediaQuery.of(context).size.height;
-    var dFont = 'Varela';
+
     return Scaffold(
       backgroundColor: Color(0xFFFCFAF8),
       body: ListView(

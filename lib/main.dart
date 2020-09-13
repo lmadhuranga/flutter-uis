@@ -1,9 +1,9 @@
-import 'package:curved_designs/Emojis/DashboardPage.dart';
-import 'package:curved_designs/HomePage.dart';
-import 'package:curved_designs/Surfin/ListInstroctors.dart';
-import 'package:curved_designs/cookies/cookies_home.dart';
-import 'package:curved_designs/curveddesigns/HealthyFood.dart';
-import 'package:curved_designs/dumplings/dumplings_home.dart';
+import 'package:Flutter_UI/Emojis/DashboardPage.dart';
+import 'package:Flutter_UI/HomePage.dart';
+import 'package:Flutter_UI/Surfin/ListInstroctors.dart';
+import 'package:Flutter_UI/cookies/cookies_home.dart';
+import 'package:Flutter_UI/curveddesigns/HealthyFood.dart';
+import 'package:Flutter_UI/dumplings/dumplings_home.dart';
 import 'package:flutter/material.dart';
 
 void main() {

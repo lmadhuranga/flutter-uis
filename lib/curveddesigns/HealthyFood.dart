@@ -1,4 +1,4 @@
-import 'package:curved_designs/curveddesigns/DetailsPage.dart';
+import 'package:Flutter_UI/curveddesigns/DetailsPage.dart';
 import 'package:flutter/material.dart';
 
 class HealthyFood extends StatefulWidget {

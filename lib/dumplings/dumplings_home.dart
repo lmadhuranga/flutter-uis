@@ -1,4 +1,4 @@
-import 'package:curved_designs/dumplings/donut_page.dart';
+import 'package:Flutter_UI/dumplings/donut_page.dart';
 import 'package:flutter/material.dart';
 
 class DumplingsPage extends StatefulWidget {

@@ -1,5 +1,5 @@
-import 'package:curved_designs/cookies/bottom_nav_bar.dart';
-import 'package:curved_designs/cookies/_cookie_page.dart';
+import 'package:Flutter_UI/cookies/bottom_nav_bar.dart';
+import 'package:Flutter_UI/cookies/_cookie_page.dart';
 import 'package:flutter/material.dart';
 
 class CookiesHomePage extends StatefulWidget {
