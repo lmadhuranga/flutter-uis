@@ -3,6 +3,7 @@ import 'package:curved_designs/HomePage.dart';
 import 'package:curved_designs/Surfin/ListInstroctors.dart';
 import 'package:curved_designs/cookies/cookies_home.dart';
 import 'package:curved_designs/curveddesigns/HealthyFood.dart';
+import 'package:curved_designs/dumplings/dumplings_home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
         '/healthFood': (context) => HealthyFood(),
         '/food': (context) => DashboardPage(),
         '/surfin': (context) => ListInstructors(),
-        '/cookies': (context) => CookiesHomePage()
+        '/cookies': (context) => CookiesHomePage(),
+        '/dumplings': (context) => DumplingsPage(),
       },
     );
   }

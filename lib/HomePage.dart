@@ -57,6 +57,15 @@ class HomePage extends StatelessWidget {
                   },
                 ),
               ),
+              ButtonTheme(
+                minWidth: minwidth,
+                child: RaisedButton(
+                  child: Text('Dumpling'),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/dumplings');
+                  },
+                ),
+              ),
             ]
           ),
         ),
