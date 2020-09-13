@@ -119,7 +119,7 @@ class _DumplingsPageState extends State<DumplingsPage> {
                     onPressed:(){},
                   ),
                   Container(
-                    width: 200.0,
+                    width: 125.0,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -141,16 +141,47 @@ class _DumplingsPageState extends State<DumplingsPage> {
                             fontSize: 12.0,
                             color: Color(0xFF322F2E),
                           ),
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.add_circle_outline),
-                          // color: Color(0xFF4C4A4A),
-                          onPressed:(){},
-                        ),
+                        ),                        
                       ],
                     ),                    
                   ),
+                  IconButton(
+                    icon: Icon(Icons.add_circle_outline),
+                    // color: Color(0xFF4C4A4A),
+                    onPressed:(){},
+                  ),
                 ],                
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 20.0, right: 20.0),
+            child: InkWell(
+              child: Container(
+                height: 50.0,
+                width: sWidth,
+                color: Color(0xFF312F2E),
+                child: Center(
+                  child: Text(
+                  'Add to card',
+                  style: TextStyle(
+                    fontFamily: dFront,
+                    color: Colors.white,
+                  ),
+                ),
+                ),
+              ),
+              onTap: (){},
+            ),
+          ),
+          SizedBox(height: 3.0,),
+          Center(
+            child: Text(
+              'Get the second order in half price',
+              style: TextStyle(
+                fontFamily: dFront,
+                fontSize: 12.0,
+                color: Color(0xFF8E8989),
               ),
             ),
           ),
